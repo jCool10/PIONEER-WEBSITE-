@@ -1,4 +1,6 @@
-const initialState = {};
+const initialState = {
+  membersLead: {},
+};
 
 export const reducers = (state = initialState, { type, payload }) => {
   switch (type) {

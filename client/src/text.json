@@ -1,0 +1,151 @@
+{
+  "id": "1834cd1c3db62e71",
+  "threadId": "1834cd1c3db62e71",
+  "labelIds": ["CATEGORY_PERSONAL", "INBOX"],
+  "snippet": "Ngày 1 tháng tháng 1 năm 1",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/alternative",
+    "filename": "",
+    "headers": [
+      {
+        "name": "Delivered-To",
+        "value": "valentinohoang1908@gmail.com"
+      },
+      {
+        "name": "Received",
+        "value": "by 2002:a02:63c3:0:b0:34c:14d1:54f2 with SMTP id j186csp414298jac;        Sat, 17 Sep 2022 11:59:19 -0700 (PDT)"
+      },
+      {
+        "name": "X-Received",
+        "value": "by 2002:a50:a69d:0:b0:44e:bf40:395f with SMTP id e29-20020a50a69d000000b0044ebf40395fmr8915497edc.234.1663441159142;        Sat, 17 Sep 2022 11:59:19 -0700 (PDT)"
+      },
+      {
+        "name": "ARC-Seal",
+        "value": "i=1; a=rsa-sha256; t=1663441159; cv=none;        d=google.com; s=arc-20160816;        b=JFejfC4pRoYBBrCMeuLD9iRh0019XMJAsDV4gJyUkh+pZX20UzwMs65I9PpLs7nb/F         CDEBttThc6mmABCJeZO9byONDDf1byQUDzMGHOb6ehZLrla+mK2Swa5Hws+F9i9fn3HX         vCrfB4hT0hhG/M2YNZ9RMO8MvNT4jgnsQw+t5o9yT6UnQBgNEU17vKQw1SR6SJw78jqD         D6pEUMtiUO8WvGKFHcOWgFVFrdhMNkBlkl7yWwrNbBBuENZpEgMqOWgCUujPOyTAHlhp         /QqWizJpCV1Rk/fAG3L6P27pBVnr6lgvSJ/UBfopVRmEAil9FmkzyUuGsEdAE84d/ZbX         5q6Q=="
+      },
+      {
+        "name": "ARC-Message-Signature",
+        "value": "i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;        h=to:subject:message-id:date:from:reply-to:mime-version         :dkim-signature;        bh=CjC2FmXz9R/fYroEvQNB0QYlp8ibcmHfXV1oCt4+5P0=;        b=IfqISeoKjtkAcg5YDvDzxBwTQRrEotwI0G9/P+Z56zpw9+AmwHJPd/pSM/6M9O4OFH         crZOQP2MvjvKMPrbEGU5FV4z86FdhnZM/HZwz8Mnw9uTUMXCLK7XsKzsluE4JcpwTZvI         ttnixVVzZqPL14dK1aDl/JdISyP3IkhE/W6U8KuNoheu8xHoqCM721B6DX4ACNtignZf         JZqv3olEwPJDWbSeEVM8wS4EBGnWQEns2fwhJ7piK85FPOKoqLPtSNVSL5KEEQBAYO2y         LpUOqOz6u/tXjXQuF5t9mj8xE8tQpIogEKUVvsON8UgtugUlI+oaTbduuUwSkm+vieoq         M6vA=="
+      },
+      {
+        "name": "ARC-Authentication-Results",
+        "value": "i=1; mx.google.com;       dkim=pass header.i=@gmail.com header.s=20210112 header.b=hspMERGI;       spf=pass (google.com: domain of zhanglanying19@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=zhanglanying19@gmail.com;       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com"
+      },
+      {
+        "name": "Return-Path",
+        "value": "\u003czhanglanying19@gmail.com\u003e"
+      },
+      {
+        "name": "Received",
+        "value": "from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])        by mx.google.com with SMTPS id z71-20020a509e4d000000b004509ad093a5sor12293692ede.3.2022.09.17.11.59.18        for \u003cvalentinohoang1908@gmail.com\u003e        (Google Transport Security);        Sat, 17 Sep 2022 11:59:19 -0700 (PDT)"
+      },
+      {
+        "name": "Received-SPF",
+        "value": "pass (google.com: domain of zhanglanying19@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;"
+      },
+      {
+        "name": "Authentication-Results",
+        "value": "mx.google.com;       dkim=pass header.i=@gmail.com header.s=20210112 header.b=hspMERGI;       spf=pass (google.com: domain of zhanglanying19@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=zhanglanying19@gmail.com;       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com"
+      },
+      {
+        "name": "DKIM-Signature",
+        "value": "v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;        h=to:subject:message-id:date:from:reply-to:mime-version:from:to:cc         :subject:date;        bh=CjC2FmXz9R/fYroEvQNB0QYlp8ibcmHfXV1oCt4+5P0=;        b=hspMERGIuuFf6vp8VqSqGUlckFDErnSZ9UlTFKvRO18zoZzNfFKz1SzVq9Lb2sSAVM         PBwl5+Tul7IflfuCbHDFe+mtfZRtlFczA3RNyqPROelbSK6A7dmGQmiTzCnNRJFmEQCE         QKluu9kiaSZfI38NfoXIhQVjodGR4KA4OEhfFXrs/3u9HASFPWEfnwMBIJE1MzdYnBTG         GZ1gwVpMKupW/iggodqGsMBUo2MRWg8sBhLBQkajzl5Cr2TWXO4InDRw98C6+DWiVMlL         NIl82+gCdxJSH/+Jp1ToGX9Wi1rN3FhZp6m0dhyu3Iva0R3KhoMQvK2HJzNNGTbWhTdz         BStw=="
+      },
+      {
+        "name": "X-Google-DKIM-Signature",
+        "value": "v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;        h=to:subject:message-id:date:from:reply-to:mime-version         :x-gm-message-state:from:to:cc:subject:date;        bh=CjC2FmXz9R/fYroEvQNB0QYlp8ibcmHfXV1oCt4+5P0=;        b=J3DjlQ3FAJPO5gF+/jHBzGs2l57VtIlkLxwCTmPx3IBpsURB7g9AWShYK5VkgXn9oE         lo3s4Q2oJd8aUaRtAHqdYn7gytMUGquPabAeoVijivjJmR0ZiuNR6Qq7aGCWHA71aoNk         aax4O6fNN9Ni0ls3ddHb7SKdeYGJ9F7CGwfUQ7L0SCZig7tPMBH1YNhF+KGW1uWyasmX         fHiqOZGEx8pojmt7rQjyS5FQqtHrQQNqjFLZkknfgQroMxzAm8MtSh6CuiGfU2B9pwJo         guX7F4QBBT+xvh96iiJimcA0exJ22/tqeS6tGhTMGeBHyLmROp0Po3hxNqjJWldZ5B3B         JqFA=="
+      },
+      {
+        "name": "X-Gm-Message-State",
+        "value": "ACrzQf0Sd24sxGHGsgUsPhslIHu0zjw7C5wAtMUuUvrYFJYxtD5miOsy y26LlXmc/bZFd7fgUW4eIJA/rgodHH6OTXYIfmO0Qcvm"
+      },
+      {
+        "name": "X-Google-Smtp-Source",
+        "value": "AMsMyM7UWwjm9cugdZF/mpyUsLsYjlFsglzw/ZmMHsL1lnYd0O1jxE9bA4LvEhF/aW0PXH7cdcxsXBC0x0qnVmMj4PU="
+      },
+      {
+        "name": "X-Received",
+        "value": "by 2002:aa7:d5c8:0:b0:44e:3eb1:a13f with SMTP id d8-20020aa7d5c8000000b0044e3eb1a13fmr9086107eds.220.1663441158315; Sat, 17 Sep 2022 11:59:18 -0700 (PDT)"
+      },
+      {
+        "name": "MIME-Version",
+        "value": "1.0"
+      },
+      {
+        "name": "Reply-To",
+        "value": "truonglananh1912@gmail.com"
+      },
+      {
+        "name": "From",
+        "value": "\"Trương Thị Lan Anh\" \u003czhanglanying19@gmail.com\u003e"
+      },
+      {
+        "name": "Date",
+        "value": "Sun, 18 Sep 2022 01:59:05 +0700"
+      },
+      {
+        "name": "Message-ID",
+        "value": "\u003cCAEzUUM9p3Qsyk_rrMQi-yYzFsY9uC8gk7ZSn3-9qT_R899kdkw@mail.gmail.com\u003e"
+      },
+      {
+        "name": "Subject",
+        "value": "HỌP"
+      },
+      {
+        "name": "To",
+        "value": "valentinohoang1908@gmail.com"
+      },
+      {
+        "name": "Content-Type",
+        "value": "multipart/alternative; boundary=\"00000000000058a25805e8e413a5\""
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/plain; charset=\"UTF-8\""
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "base64"
+          }
+        ],
+        "body": {
+          "size": 32,
+          "data": "TmfDoHkgMSB0aMOhbmcgdGjDoW5nIDEgbsSDbSAxDQo="
+        }
+      },
+      {
+        "partId": "1",
+        "mimeType": "text/html",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/html; charset=\"UTF-8\""
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "quoted-printable"
+          }
+        ],
+        "body": {
+          "size": 53,
+          "data": "PGRpdiBkaXI9Imx0ciI-TmfDoHkgMSB0aMOhbmcgdGjDoW5nIDEgbsSDbSAxPC9kaXY-DQo="
+        }
+      }
+    ]
+  },
+  "sizeEstimate": 5240,
+  "historyId": "505355",
+  "internalDate": "1663441145000"
+}

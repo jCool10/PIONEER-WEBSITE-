@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import UpLoadEvent from './components/UpLoadEvent/UpLoadEvent';
 import { Home, Members, Product, Events, Contact, AppLayout } from './pages';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
           <Route path="/members" element={<Members />} />
           <Route path="/product" element={<Product />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/events/add" element={<UpLoadEvent />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
