@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import { Footer, Header, Sidebar } from '../components';
+import { Header, Sidebar } from '../../components';
 
 export default function AppLayout() {
   return (
@@ -8,7 +8,6 @@ export default function AppLayout() {
       <Sidebar />
       <Header />
       <Outlet />
-      <Footer />
     </>
   );
 }
