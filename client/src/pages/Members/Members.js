@@ -1,24 +1,23 @@
 import React from 'react';
-import OutTeam1 from '../../assets/OUT_TEAMS_1.png';
 import './Members.scss';
 import SwiperCard from '../../components/Swiper/SwiperCard';
-
-import { members } from '../../data';
-
-const renderMembers = () => {
-  return members.map((member, index) => {
-    return <SwiperCard key={index} member={member} />;
-  });
-};
+import { useSelector } from 'react-redux';
 
 function Members() {
+  const { listMember } = useSelector((state) => state.MemberReducer);
+
   return (
     <section>
-      <div className="introduce">
-        <img src={OutTeam1} alt="" className="w-full h-full" />
-      </div>
+      <div className="introduce"></div>
 
-      <div>{renderMembers()}</div>
+      <h1 className="h1Title">BAN CHỈ NHIỆM CÂU LẠC BỘ</h1>
+      <SwiperCard members={listMember.filter((member) => member.role === 'memberLead')} slidesPerView={3} />
+
+      <h1 className="h1Title">LEADER CÁC TEAM</h1>
+      <SwiperCard members={listMember.filter((member) => member.role === 'teamLeader')} slidesPerView={3} />
+
+      <h1 className="h1Title">THÀNH VIÊN</h1>
+      <SwiperCard members={listMember.filter((member) => member.role === 'member')} slidesPerView={5} />
     </section>
   );
 }

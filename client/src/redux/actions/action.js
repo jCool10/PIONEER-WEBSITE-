@@ -1,4 +1,6 @@
-export const first = (payload) => ({
-  type: 'second',
-  payload,
+import { MEMBER_DETAIL_TYPE } from '../types/MemberType';
+
+export const MemberDetailAction = (id) => ({
+  type: MEMBER_DETAIL_TYPE,
+  payload: id,
 });
