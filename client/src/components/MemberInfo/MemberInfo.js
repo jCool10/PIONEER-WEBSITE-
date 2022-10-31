@@ -12,6 +12,7 @@ export default function MemberInfo(props) {
     position,
     describe,
     img,
+    strengths,
     contact: { facebook, gmail, github, linkedin },
   } = memberDetail[0];
 
@@ -22,7 +23,7 @@ export default function MemberInfo(props) {
       <div className="user_profile">
         <div className="user_option">
           <div className="user_avatar">
-            <img src={img} alt="" />
+            <img src={`.${img}`} alt="" />
           </div>
           <h4>{name}</h4>
           <h5>{position}</h5>
@@ -59,10 +60,9 @@ export default function MemberInfo(props) {
           <div className="grid grid-cols-7 strength">
             <h4 className="col-span-2">Thế mạnh bản thân: </h4>
             <div className="col-span-5 strength_detail">
-              <span>AI</span>
-              <span>IOT</span>
-              <span>WEB</span>
-              <span>APP</span>
+              {strengths.map((item) => {
+                return <span>{item}</span>;
+              })}
             </div>
 
             <h4 className="col-span-2">Giới thiệu bản thân: </h4>
