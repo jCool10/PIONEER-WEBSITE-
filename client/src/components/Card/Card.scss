@@ -12,7 +12,7 @@
       width: 280px;
       border-radius: 50%;
       padding: 3px;
-      background: #ff676d;
+      background: #55bbf6;
       margin-bottom: 14px;
       img {
         height: 100%;
@@ -28,7 +28,7 @@
     }
     .job {
       font-size: 20px;
-      color: #ff676d;
+      color: #55bbf6;
     }
     .media-icons {
       margin: 5px;
@@ -46,22 +46,22 @@
       color: #fff;
       border-radius: 50%;
       border: 2px solid transparent;
-      background: #ff676d;
+      background: #55bbf6;
       transition: all 0.3s ease;
       &:hover {
-        color: #ff676d;
+        color: #55bbf6;
         background-color: #fff;
-        border-color: #ff676d;
+        border-color: #55bbf6;
       }
     }
   }
   .detail {
     &:hover {
-      color: #ff676d;
+      color: #55bbf6;
       background-color: #fff;
-      border-color: #ff676d;
+      border-color: #55bbf6;
     }
-    background-color: #ff676d;
+    background-color: #55bbf6;
     color: #fff;
     font-size: 1rem;
     text-transform: uppercase;

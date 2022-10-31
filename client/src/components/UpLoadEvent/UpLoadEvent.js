@@ -1,4 +1,4 @@
-import React, { useMemo, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 
 import JoditEditor from 'jodit-react';
 
@@ -20,6 +20,7 @@ const UpLoadEvent = ({ placeholder }) => {
   return (
     <section>
       <JoditEditor ref={editor} config={config} onChange={(content) => setValue(content)} />
+      {value}
       <button className="p-5 bg-slate-600" onClick={() => {}}>
         Thêm
       </button>
