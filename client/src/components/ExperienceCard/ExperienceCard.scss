@@ -1,0 +1,39 @@
+.ExperienceCard {
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 80px 35px;
+  margin: 30px;
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #565656;
+    padding-bottom: 80px;
+  }
+  .author {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .authorImg {
+      width: 115px;
+      height: 115px;
+      img {
+        border-radius: 100rem;
+      }
+    }
+  }
+}
+.slick-dots li {
+  width: 80px !important;
+  border-radius: 80px !important;
+  list-style: none;
+  background-color: #dbe7ff;
+}
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+  // font-family: none;
+  color: unset;
+}
+li.slick-active {
+  background: #204ea5;
+}
