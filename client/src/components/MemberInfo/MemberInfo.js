@@ -8,6 +8,7 @@ export default function MemberInfo(props) {
   const { memberDetail } = useSelector((state) => state.MemberReducer);
 
   const {
+    id,
     name,
     position,
     describe,
@@ -17,6 +18,66 @@ export default function MemberInfo(props) {
   } = memberDetail[0];
 
   const navigate = useNavigate();
+
+  if (id === 'dao-duy-tuan')
+    return (
+      <section>
+        <div className="user_profile">
+          <div className="user_option">
+            <div className="user_avatar">
+              <img src={`.${img}`} alt="" />
+            </div>
+            <h4>{name}</h4>
+            <h5>{position}</h5>
+            <div className="separador"></div>
+            <div className="user_contact">
+              <a href={`${facebook}`} target="_blank" rel="noreferrer">
+                <i class="fab fa-facebook" style={{ color: '#0090E1' }}></i>
+              </a>
+              <a href={`mailto:${gmail}`}>
+                <i class="fa fa-envelope" style={{ color: '#EE0000' }}></i>
+              </a>
+              <a href={`${linkedin}`} target="_blank" rel="noreferrer">
+                <i class="fa fa-info" style={{ color: '#0090E1' }}></i>
+              </a>
+              {/*phone */}
+              <a href={`tel:${github}`} target="_blank" rel="noreferrer">
+                <i class="fa fa-phone" style={{ color: '#000000' }}></i>
+              </a>
+            </div>
+          </div>
+          <div className="profile_info">
+            <button
+              className="cancel"
+              onClick={() => {
+                navigate('/members');
+              }}
+            >
+              X
+            </button>
+            <h1>{name}</h1>
+            <h2>{position}</h2>
+            <div className="separador"></div>
+
+            <div className="grid grid-cols-7 strength">
+              <h4 className="col-span-2">Lĩnh vực nghiên cứu:</h4>
+              <div className="col-span-5 strength_detail">
+                {strengths.map((item) => {
+                  return <span>{item}</span>;
+                })}
+              </div>
+
+              <h4 className="col-span-2">Giới thiệu bản thân </h4>
+              <p className="col-span-5">
+                {describe.map((item) => {
+                  return <div>{item}</div>;
+                })}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
 
   return (
     <section>
