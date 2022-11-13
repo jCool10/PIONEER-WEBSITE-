@@ -1,0 +1,21 @@
+.pageDetail
+{
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    grid-template-rows: 1fr;
+    background-color: #F9FDFF;
+}
+.container
+{
+    padding: 0 40px;
+    
+    
+}
+.bodyContent
+{
+    margin: 0 50px;
+    /* background-color: #eef6fd; */
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    grid-template-rows: 1fr;
+}
