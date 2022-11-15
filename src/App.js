@@ -10,8 +10,8 @@ function App() {
     //   <Home />
     // </div>
     <div className="App md:h-screen">
-      <Product />
-      {/* <PageDetail /> */}
+      {/* <Product /> */}
+      <PageDetail />
     </div>
   );
 }
