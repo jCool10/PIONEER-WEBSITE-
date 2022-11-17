@@ -3,9 +3,9 @@ import "./Contact.scss";
 
 function Contact() {
   return (
-    <section>
+    <section className='contact'>
       <div className="title">
-        <h>Liên hệ</h>
+        <h3>Liên hệ</h3>
         <p>Để lại tin nhắn cho chúng tôi.</p>
       </div>
       <form class="cf">
