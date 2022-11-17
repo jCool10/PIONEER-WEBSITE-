@@ -1,0 +1,91 @@
+.page 
+{
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    grid-template-rows: 1fr;
+}
+.container
+{
+    padding: 0 40px;
+}
+.label 
+{
+    width: 565px;
+    height: 100px;
+    box-shadow: -4px -4px 5px rgba(0, 0, 0, 0.25), 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    letter-spacing: 0.1em;
+    color: #000;
+    font-weight: 700;
+    font-size: 60px;   
+}
+
+.item
+{
+    padding: 56px;
+    display: flex;
+    width: 1600px;
+    height: 700px;
+    border-radius: 45px;
+    margin-top: 34px;
+    background-color: #eef6fd
+    
+}
+.description
+{
+    width: 1013px;
+    height: 100%;
+    margin-right: 23px;
+}
+.title
+{
+    width: 100%;
+    height: 206px;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 103px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #000;
+}
+.summary
+{
+    width: 100%;
+    height: 343px;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 46px;
+    display: flex;
+    align-items: center;
+    color: #4E4E4E;  
+
+
+}
+.more
+{
+    width: 417px;
+    height: 86px;
+    background-color: #0130fa;
+    border-radius: 45px;
+    padding: 15px 47px;
+    color: #fff;
+}
+.more:hover
+{
+    opacity: 0.9;
+
+}
+.image
+{
+    flex: 1;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
