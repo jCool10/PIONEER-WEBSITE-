@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header/Header.js'
-// import Sidebar from '../../components/Sidebar/Sidebar.js'
+import Sidebar from '../../components/Sidebar/Sidebar.js'
 import OutTeam from '../../assets/product_cover.png';
 import styles from './Product.module.css'
 import Footer from '../../components/Footer/Footer.js'
@@ -51,8 +51,7 @@ const PostProductItems = () =>
 function Product() {
   return (
   <section className={styles.page}>
-    <div>Sidebar</div>
-    {/* <Sidebar /> */}
+    <Sidebar />
     <div className={styles.container}>
       <Header />
       <img src={OutTeam} alt="Introduce"></img>
