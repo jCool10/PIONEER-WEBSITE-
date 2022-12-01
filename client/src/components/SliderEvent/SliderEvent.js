@@ -10,7 +10,8 @@ export default function SliderEvent(props) {
     speed: 500,
     rows,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    autoplay: true,
+    slidesToScroll: 1,
     padding: 20,
   };
 

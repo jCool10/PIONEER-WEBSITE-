@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { SliderPrize } from '../SliderPrize/SliderPrize';
 
 import './MemberInfo.scss';
 
@@ -10,6 +11,7 @@ export default function MemberInfo(props) {
   const {
     id,
     name,
+    classes,
     position,
     describe,
     img,
@@ -23,7 +25,7 @@ export default function MemberInfo(props) {
     return (
       <section>
         <div className="user_profile">
-          <div className="user_option">
+          <div className="user_option box-outer">
             <div className="user_avatar">
               <img src={`.${img}`} alt="" />
             </div>
@@ -46,7 +48,7 @@ export default function MemberInfo(props) {
               </a>
             </div>
           </div>
-          <div className="profile_info">
+          <div className="profile_info box-outer">
             <button
               className="cancel"
               onClick={() => {
@@ -82,7 +84,7 @@ export default function MemberInfo(props) {
   return (
     <section>
       <div className="user_profile">
-        <div className="user_option">
+        <div className="user_option box-outer">
           <div className="user_avatar">
             <img src={`.${img}`} alt="" />
           </div>
@@ -105,7 +107,10 @@ export default function MemberInfo(props) {
             </a>
           </div>
         </div>
-        <div className="profile_info">
+        <div className="profile_info box-outer">
+          <div className="box-outer">
+
+          </div>
           <button
             className="cancel"
             onClick={() => {
@@ -114,7 +119,7 @@ export default function MemberInfo(props) {
           >
             X
           </button>
-          <h1>{name}</h1>
+          <h1>{name} - {classes}</h1>
           <h2>{position}</h2>
           <div className="separador"></div>
 
@@ -125,10 +130,18 @@ export default function MemberInfo(props) {
                 return <span>{item}</span>;
               })}
             </div>
-
             <h4 className="col-span-2">Giới thiệu bản thân: </h4>
             <p className="col-span-5">{describe}</p>
           </div>
+          <div className="separador"></div>
+          {/* <div className="prize">
+            <h4>Giải Thưởng </h4>
+            <SliderPrize />
+          </div> */}
+
+          {/* <div className="reward box-outer">
+            <h4>Giải Thưởng: </h4>
+          </div> */}
         </div>
       </div>
     </section>

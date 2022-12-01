@@ -3,10 +3,9 @@ import './Footer.scss';
 
 export default function Footer() {
   return (
-    <footer>
+    <section className='footer'>
       <h3 className="footerTitle h3Title">Contact Us</h3>
       <ul className="footerMedia">
-
         <li>
           <a href="mailto:clbpioneer@gmail.com">
             <i className="fa fa-envelope text-[#FF0000]">
@@ -23,6 +22,6 @@ export default function Footer() {
         </li>
       </ul>
       <div className="footerImg"></div>
-    </footer>
+    </section>
   );
 }

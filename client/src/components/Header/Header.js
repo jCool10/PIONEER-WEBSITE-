@@ -5,7 +5,7 @@ import './Header.scss';
 
 export default function Header() {
   return (
-    <header className="header">
+    <section className="header">
       <div className="header-img">
         <img src={logo} alt="logo" />
       </div>
@@ -15,6 +15,6 @@ export default function Header() {
 
         <input type="search" placeholder="Search" />
       </div>
-    </header>
+    </section>
   );
 }

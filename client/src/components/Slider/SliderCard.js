@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Card from '../Card/Card';
+import Card from '../MemberCard/MemberCard';
 import styleSlick from './MultipleRowSlick.module.css';
 
 function SampleNextArrow(props) {
@@ -34,6 +33,7 @@ export default function SliderCard(props) {
     infinite: true,
     slidesToShow,
     slidesToScroll: 1,
+    autoplay: true,
     rows: rows,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,

@@ -1,12 +1,4 @@
-.h3Title {
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 55px;
-  color: #666666;
-}
-
-footer {
-  width: 1600px;
+.footer {
   height: 800px;
   margin: 0 auto;
   background: rgba(230, 230, 230, 0.5);
@@ -18,13 +10,16 @@ footer {
 
   .footerTitle {
     margin-bottom: 66px;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 55px;
+    color: #666666;
   }
 
   .footerMedia {
     display: flex;
-    justify-self: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 100px;
     margin-bottom: 100px;
 
     .fa,

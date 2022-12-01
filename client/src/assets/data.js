@@ -23,6 +23,7 @@ export const listMember = [
   {
     id: 'ton-that-hai',
     name: 'Tôn Thất Hải',
+    classes: '20KTMT2',
     position: 'Phó Chủ nhiệm',
     role: 'memberLead',
     strengths: ['WEB', 'APP', 'ALGORITHM', 'EMBEDDED', 'IOT'],
@@ -39,11 +40,12 @@ export const listMember = [
   {
     id: 'dao-trong-nhan',
     name: 'Đào Trọng Nhân',
+    classes: '19DTCLC3',
     position: 'Trưởng ban Hệ thống nhúng/IOTs',
     role: 'teamLeader',
     strengths: ['WEB', 'APP', 'ALGORITHM', 'EMBEDDED', 'IOT'],
     img: './imgMembers/dao trong nhan.jpg',
-    describe: 'lorem',
+    describe: '',
     contact: {
       facebook: 'https://www.facebook.com/Rekii.Rockie/',
       gmail: 'dtnhan.ete.dut@gmail.com',
@@ -54,11 +56,17 @@ export const listMember = [
   {
     id: 'hoang-ngoc-loc',
     name: 'Hoàng Ngọc Lộc ',
+    classes: '20KTMT2',
     position: 'Trưởng ban Web/App + Thuật toán',
     role: 'teamLeader',
     strengths: ['WEB', 'APP', 'ALGORITHM', 'AI'],
     img: './imgMembers/hoang ngoc loc.jpg',
     describe: 'lorem',
+    reward: {
+      rank: '',
+      contestName: '',
+      img: ''
+    },
     contact: {
       facebook: 'https://www.facebook.com/reddevils.1908',
       gmail: 'valentinohoang1908@gmail.com',
@@ -69,8 +77,10 @@ export const listMember = [
   {
     id: 'le-trong-phuoc',
     name: 'Lê Trọng Phước',
+    classes: '19DTCLC3',
     position: 'Trưởng ban Điện Tử',
     role: 'teamLeader',
+    strengths: ['ELECTRONIC'],
     img: './imgMembers/le trong phuoc.png',
     describe: `"Xin chào! Mình là Lê Trọng Phước, sinh viên năm 4 của Khoa Điện Tử-Viễn Thông, hiện tại mình là Trưởng ban Điện tử CLB Pioneer. 
     Có 1 câu nói của Isaac Niuton mà mình luôn tâm đắc ""Nếu tôi nhìn xa hơn người khác thì đó là nhờ tôi đứng trên vai nhưng người khổng lồ"" vì đây mình luôn cố gắng học tập những điều hay từ mọi người xung quanh và từ những người ""khổng lồ"", học tập để đối nhân xử thế, không trở nên vô dụng và tạo được dấu ấn đẹp.
@@ -85,21 +95,24 @@ export const listMember = [
   {
     id: 'nguyen-tue-tam',
     name: 'Nguyễn Tuệ Tâm',
+    classes: '19DTCLC1',
     position: 'Trưởng ban AI',
     role: 'teamLeader',
-    img: 'https://picsum.photos/200/300',
-    describe: 'lorem',
+    img: './imgMembers/nguyen tue tam.jpeg',
+    describe: 'Learn with curiosity ',
     contact: {
-      facebook: 'https://www.facebook.com/reddevils.1908',
-      gmail: 'valentinohoang1908@gmail.com',
-      github: 'https://github.com/jCool10',
-      linkedin: 'https://www.linkedin.com/in/hoang-ngoc-loc-171a95229/',
+      facebook: 'https://www.facebook.com/i.mtue.tam',
+      gmail: 'tuetam011204@gmail.com',
+      github: 'https://github.com/ngtuetam',
+      linkedin: '',
     },
   },
   {
     id: 'truong-cong-phuoc',
     name: 'Trương Công Phước',
+    classes: '19DTCLC4',
     position: 'Trưởng ban Truyền Thông',
+    strengths: ['MEDIA'],
     role: 'teamLeader',
     img: 'https://picsum.photos/200/300',
     describe: 'lorem',
@@ -115,6 +128,7 @@ export const listMember = [
   {
     id: 'nguyen-duy-tuan-nguyen',
     name: 'Nguyễn Duy Tuấn Nguyên',
+    classes: '20DT2',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/nguyen duy tuan nguyen.jpg',
@@ -130,11 +144,16 @@ export const listMember = [
   {
     id: 'nguyen-ngoc-trung',
     name: 'Nguyễn Ngọc Trung',
+    classes: '21KTMT2',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/nguyen ngoc trung.jpg',
-    strengths: ['WEB', 'APP', 'ALGORITHM'],
-    describe: 'tuổi 20 năm cao 1m64 nặng 63kg',
+    strengths: ['WEB', 'APP', 'ALGORITHM', 'AI', 'IOT', 'EMBEDDED'],
+    describe: `"Tên : Nguyễn Ngọc Trung - SV Năm 2 
+    Lớp : 21KTMT2 
+    Ngành : Kĩ Thuật Máy Tính 
+    Khoa : Điện Tử Viễn Thông
+    Lĩnh Vực Yêu Thích : AI / IOT"`,
     contact: {
       facebook: 'https://www.facebook.com/nguoithichcuoi102',
       gmail: 'trungnguyenraz@gmail.com',
@@ -145,6 +164,7 @@ export const listMember = [
   {
     id: 'tran-thanh-khoa',
     name: 'Trần Thanh Khoa',
+    classes: '21DT1',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/tran thanh khoa.jpg',
@@ -160,10 +180,11 @@ export const listMember = [
   {
     id: 'le-pham-cong',
     name: 'Lê Phạm Công ',
+    classes: '20KTMT1',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/le  pham cong.jpg',
-    strengths: ['WEB', 'APP', 'ALGORITHM'],
+    strengths: ['WEB', 'APP', 'ALGORITHM', 'EMBEDDED', 'IOT', 'ELECTRONIC'],
     describe:
       'Xin chào, mình là Công, mình đến từ Quảng Nam, hiện tại mình đang học ngành Kỹ thuật máy tính và là thành viên Câu lạc bộ sinh viên nghiên cứu khoa học Pioneer.',
     contact: {
@@ -176,10 +197,11 @@ export const listMember = [
   {
     id: 'dang-duc-chinh',
     name: 'Đặng Đức Chính ',
+    classes: '21KTMT2',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/dang duc chinh.jpg',
-    strengths: ['WEB', 'APP', 'ALGORITHM'],
+    strengths: ['WEB', 'APP', 'ALGORITHM', 'AI'],
     describe:
       'Mình đến từ một vùng nông thôn ở Quảng Nam, mang theo sự kỳ vọng của gia đình trên con đường đến với đại học. Mình thực sự yêu thích và có một niềm đam mê kỳ lạ với công nghệ.',
     contact: {
@@ -190,28 +212,13 @@ export const listMember = [
     },
   },
   {
-    id: 'bui-thai-son',
-    name: 'Bùi Thái Sơn',
-    position: 'Thành viên',
-    role: 'member',
-    img: './imgMembers/bui thai son.jpg',
-    strengths: ['WEB', 'APP', 'ALGORITHM'],
-    describe:
-      'Là một người nhiệt tình hoà đồng, khả năng tiếp thu nhanh và hay đặt câu hỏi "ngu". Nhưng tóm lại vui tính ^^',
-    contact: {
-      facebook: 'https://www.facebook.com/punzunkun/',
-      gmail: 'thaison2001pk@gmail.com',
-      github: 'https://github.com/puniac',
-      linkedin: '',
-    },
-  },
-  {
     id: 'pham-duc-thang',
     name: 'Phạm Đức Thắng',
+    classes: '20KTMT2',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/pham duc thang.jpg',
-    strengths: ['WEB', 'APP', 'ALGORITHM'],
+    strengths: ['EMBEDDED', 'IOT'],
     describe:
       'Mình là sinh viên khóa 18 khoa ĐTVT, chuyên ngành KTMT. Tham gia CLB từ năm 2018 đến nay. Mình đang định hướng theo lĩnh vực nhúng và IoT.',
     contact: {
@@ -224,10 +231,11 @@ export const listMember = [
   {
     id: 'mai-tien-dat',
     name: 'Mai Tiến Đạt',
+    classes: '19DTCLC4',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/mai tien dat.jpg',
-    strengths: ['WEB', 'APP', 'ALGORITHM'],
+    strengths: ['ELECTRONIC', 'EMBEDDED', 'IOT'],
     describe: 'Khoá 19, chuyên ngành điện tử',
     contact: {
       facebook: 'https://www.facebook.com/tiendat8621',
@@ -239,10 +247,11 @@ export const listMember = [
   {
     id: 'ngo-xuan-sy',
     name: 'Ngô Xuân Sỹ',
+    classes: '20KTMT1',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/ngo xuan sy.jpg',
-    strengths: ['WEB', 'APP', 'ALGORITHM'],
+    strengths: ['WEB', 'APP', 'ALGORITHM', 'EMBEDDED', 'IOT'],
     describe: 'hòa đồng vui vẻ',
     contact: {
       facebook: 'https://www.facebook.com/traises.ems',
@@ -254,10 +263,11 @@ export const listMember = [
   {
     id: 'dao-van-minh',
     name: 'Đào Văn Minh',
+    classes: '21KTMT2',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/dao van minh.jpg',
-    strengths: ['WEB', 'APP', 'ALGORITHM'],
+    strengths: ['WEB', 'APP', 'ALGORITHM', 'AI', 'MEDIA'],
     describe:
       'Mình khá thích giao lưu ( về mọi mặt từ bàn nhậu tới thể thao và cả code ) :> Kinh nghiệm còn non mong mọi người giúp đỡ',
     contact: {
@@ -270,10 +280,11 @@ export const listMember = [
   {
     id: 'le-dinh-phuoc',
     name: 'Lê Đình Phước',
+    classes: '21DT1',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/le dinh phuoc.jpg',
-    strengths: ['WEB', 'APP', 'ALGORITHM'],
+    strengths: ['ELECTRONIC'],
     describe:
       'Mình khá thích giao lưu ( về mọi mặt từ bàn nhậu tới thể thao và cả code ) :> Kinh nghiệm còn non mong mọi người giúp đỡ',
     contact: {
@@ -286,6 +297,7 @@ export const listMember = [
   {
     id: 'ta-duc-manh',
     name: 'Tạ Đức Mạnh',
+    classes: '19DTCLC3',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/ta duc manh.jpg',
@@ -301,10 +313,11 @@ export const listMember = [
   {
     id: 'tran-thanh-dat',
     name: 'Trần Thành Đạt',
+    classes: '21DT1',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/tran thanh dat.jpg',
-    strengths: ['WEB', 'APP', 'ALGORITHM'],
+    strengths: ['MEDIA'],
     describe: 'Thích chụp ảnh, xem anime, tìm hiểu lịch sử',
     contact: {
       facebook: 'https://www.facebook.com/thanhdatxd25',
@@ -316,6 +329,7 @@ export const listMember = [
   {
     id: 'vo-pham-gia-huy',
     name: 'Võ Phạm Gia Huy',
+    classes: '20KTMT2',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/vo pham gia huy.jpeg',
@@ -331,10 +345,11 @@ export const listMember = [
   {
     id: 'nguyen-tan-dat',
     name: 'Nguyễn Tấn Đạt',
+    classes: '20DTCLC1',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/nguyen tan dat.png',
-    strengths: ['WEB', 'APP', 'ALGORITHM'],
+    strengths: ['ELECTRONIC'],
     describe: ' ',
     contact: {
       facebook: 'https://www.facebook.com/kaledinwindsky/',
@@ -346,10 +361,11 @@ export const listMember = [
   {
     id: 'dinh-van-quang',
     name: 'Đinh Văn Quang',
+    classes: '20DT1',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/Dinh Van Quang.jpg',
-    strengths: ['WEB', 'APP', 'ALGORITHM'],
+    strengths: ['AI', 'EMBEDDED', 'IOT'],
     describe:
       'Mình là Đinh Văn Quang, hiện đang là sinh viên năm 3 ngành Điện Tử Viễn Thông. Lĩnh vực đang nghiên cứu lập trình nhúng và AI.',
     contact: {
@@ -362,10 +378,11 @@ export const listMember = [
   {
     id: 'nguyen-nhat-minh',
     name: 'Nguyễn Nhật Minh',
+    classes: '20DTCLC1',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/nguyen nhat minh.jpg',
-    strengths: ['WEB', 'APP', 'ALGORITHM'],
+    strengths: ['EMBEDDED', 'IOT'],
     describe: 'Khá là ngại ngùng :)',
     contact: {
       facebook: 'https://www.facebook.com/nhatminhd27th/',
@@ -377,10 +394,11 @@ export const listMember = [
   {
     id: 'tran-thi-thanh-nga',
     name: 'Trần Thị Thanh Nga',
+    classes: '21DT1',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/tran thi thanh nga.jpg',
-    strengths: ['WEB', 'APP', 'ALGORITHM'],
+    strengths: ['ELECTRONIC'],
     describe:
       'Xin chào mọi người, mình là Thanh Nga. Chắc hẳn là mọi người thấy khá ít nữ theo đuổi mảng điện tử nhỉ? Mình là 1 trong số đó, hiện tại mình đang trau dồi kiến thức và cố gắng hoàn thiện bản thân hơn mỗi ngày để có thể làm việc ở mảng Điện tử này. Hy vọng có thể làm quen được những người bạn mới và các anh chị trong ngành. <3',
     contact: {
@@ -393,10 +411,11 @@ export const listMember = [
   {
     id: 'truong-huy-hoa',
     name: 'Trương Huy Hòa ',
+    classes: '20DTCLC1',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/truong huy hoa.jpg',
-    strengths: ['WEB', 'APP', 'ALGORITHM'],
+    strengths: ['ELECTRINIC', 'EMBEDDED', 'IOT'],
     describe: `Lớp 20DTCLC1
       Quê quán: QUẢNG TRỊ
       Thời gian rảnh thường chạy bộ, tập gym, thích đi cf học nhóm cùng bạn bè, đọc sách,...
@@ -411,10 +430,11 @@ export const listMember = [
   {
     id: 'thai-van-phuc',
     name: 'Thái Văn Phúc',
+    classes: '20KTMT2',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/thai van phuc.jpg',
-    strengths: ['WEB', 'APP', 'ALGORITHM'],
+    strengths: ['WEB', 'APP', 'ALGORITHM', 'AI'],
     describe: `nothing to ..., nothing to ...`,
     contact: {
       facebook: 'https://www.facebook.com/ice.pie.2',
@@ -426,10 +446,11 @@ export const listMember = [
   {
     id: 'nguyen-van-minh',
     name: 'Nguyễn Văn Minh',
+    classes: '19DTCLC2',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/nguyen van minh.jpg',
-    strengths: ['WEB', 'APP', 'ALGORITHM'],
+    strengths: ['AI', 'ELECTRONIC'],
     describe: `à ừm hello, lên đây thăm quan chút thôi`,
     contact: {
       facebook: 'https://www.facebook.com/profile.php?id=100018715681829',
@@ -441,10 +462,11 @@ export const listMember = [
   {
     id: 'tran-quang-huyen',
     name: 'Trần Quang Huyên',
+    classes: '20KTMT2',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/tran quang huyen.jpg',
-    strengths: ['WEB', 'APP', 'ALGORITHM'],
+    strengths: ['WEB', 'APP', 'ALGORITHM', 'AI', 'ELECTRONIC', 'EMBEDDED', 'IOT'],
     describe: `Người giàu ( tình cảm )`,
     contact: {
       facebook: 'https://www.facebook.com/tranquang.huyen.5',
@@ -456,10 +478,11 @@ export const listMember = [
   {
     id: 'phan-tran-chi-hieu',
     name: 'Phan Trần Chí Hiếu',
+    classes: '20DT1',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/phan tran chi hieu.jpg',
-    strengths: ['WEB', 'APP', 'ALGORITHM'],
+    strengths: ['AI'],
     describe: `Mình tên là Phan Trần Chí Hiếu, sinh viên lớp 20DT1 ngành Điện tử Viễn thông. Mình chuyên về phát triển trí tuệ nhân tạo, mình có niềm đam mê lập trình từ thời học sinh. Sở thích của mình là đọc sách và nghe nhạc mỗi khi rảnh rỗi. Mình mong muốn sau khi tốt nghiệp đại học có thể được làm việc ở công ty đa quốc gia.`,
     contact: {
       facebook: 'https://www.facebook.com/profile.php?id=100035557726445',
@@ -471,6 +494,7 @@ export const listMember = [
   {
     id: 'phung-thi-anh',
     name: 'Phùng Thị Ánh',
+    classes: '21TCLC-DT2',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/phung thi anh.jpg',
@@ -486,10 +510,11 @@ export const listMember = [
   {
     id: 'vo-anh-huy',
     name: 'Võ Anh Huy',
+    classes: '19DTCLC2',
     position: 'Thành viên',
     role: 'member',
     img: './imgMembers/vo anh huy.jpg',
-    strengths: ['WEB', 'APP', 'ALGORITHM'],
+    strengths: ['ELECTRONIC'],
     describe: `có niềm đam mê với điện tử, thích chơi đàn guitar, thích nghe nhạc`,
     contact: {
       facebook: 'facebook.com/huy.voanh.169',

@@ -9,7 +9,7 @@ export default function Sidebar() {
   const sidebarItems = [
     { icon: <i className="fa-solid fa-house" />, path: '/', title: 'Home', bgColor: '#838383' },
     { icon: <i class="fa-solid fa-users"></i>, path: '/members', title: 'Members', bgColor: '#FBBC05' },
-    { icon: <i class="fa-solid fa-sitemap"></i>, path: '/product', title: 'Product', bgColor: '#34A853' },
+    // { icon: <i class="fa-solid fa-sitemap"></i>, path: '/product', title: 'Product', bgColor: '#34A853' },
     { icon: <i class="fa-solid fa-calendar-check"></i>, path: '/events', title: 'Events', bgColor: '#EA4335' },
     { icon: <i class="fa fa-comment"></i>, path: '/contact', title: 'Contact', bgColor: '#4285F4]' },
   ];
