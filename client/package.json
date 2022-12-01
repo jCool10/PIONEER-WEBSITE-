@@ -1,5 +1,5 @@
 {
-  "homepage": "https://jcool10.github.io/PIONEER-WEBSITE-",
+  "homepage": ".",
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -28,7 +28,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
+    "predeploy": "react-scripts build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
