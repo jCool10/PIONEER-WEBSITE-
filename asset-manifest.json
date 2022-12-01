@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/PIONEER-WEBSITE-/static/css/main.aaf4be6c.css",
+    "main.js": "/PIONEER-WEBSITE-/static/js/main.301cf7e9.js",
+    "static/media/pioneer.png": "/PIONEER-WEBSITE-/static/media/pioneer.a994b6c79352d15184e6.png",
+    "static/media/product_cover.png": "/PIONEER-WEBSITE-/static/media/product_cover.d0caef368860fdd85d01.png",
+    "static/media/OUT_TEAMS_1.png": "/PIONEER-WEBSITE-/static/media/OUT_TEAMS_1.6340521f6ceb75cf41ce.png",
+    "static/media/logoPioneer.png": "/PIONEER-WEBSITE-/static/media/logoPioneer.a225df1081138b2e6b82.png",
+    "static/media/logo_pioneer.png": "/PIONEER-WEBSITE-/static/media/logo_pioneer.f99ff9294bec5856d337.png",
+    "static/media/slick.svg": "/PIONEER-WEBSITE-/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/PIONEER-WEBSITE-/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/PIONEER-WEBSITE-/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/PIONEER-WEBSITE-/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/PIONEER-WEBSITE-/index.html",
+    "main.aaf4be6c.css.map": "/PIONEER-WEBSITE-/static/css/main.aaf4be6c.css.map",
+    "main.301cf7e9.js.map": "/PIONEER-WEBSITE-/static/js/main.301cf7e9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aaf4be6c.css",
+    "static/js/main.301cf7e9.js"
+  ]
+}
