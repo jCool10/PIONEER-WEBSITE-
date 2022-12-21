@@ -1,5 +1,6 @@
-import React from 'react';
-import Slider from 'react-slick';
+import React from "react";
+import Slider from "react-slick";
+import "./SliderEvent.scss";
 
 export default function SliderEvent(props) {
   const { rows, data } = props;
@@ -10,7 +11,7 @@ export default function SliderEvent(props) {
     speed: 500,
     rows,
     slidesToShow: 3,
-    autoplay: true,
+    autoplay: false,
     slidesToScroll: 1,
     padding: 20,
   };

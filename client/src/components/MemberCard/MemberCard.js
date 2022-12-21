@@ -1,14 +1,13 @@
-import React from 'react';
-import { useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
-import { MemberDetailAction } from '../../redux/actions/action';
-import './MemberCard.scss';
+import React from "react";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { MemberDetailAction } from "../../redux/actions/action";
+import "./MemberCard.scss";
 
 export default function Card(props) {
   const { name, position, img, id } = props.member;
 
   const navigate = useNavigate();
-  const dispatch = useDispatch();
 
   return (
     <div className="card">
@@ -24,9 +23,7 @@ export default function Card(props) {
         <button
           className="detail"
           onClick={() => {
-            console.log(123);
             navigate(`/members/${id}`);
-            dispatch(MemberDetailAction(id));
           }}
         >
           Chi tiết

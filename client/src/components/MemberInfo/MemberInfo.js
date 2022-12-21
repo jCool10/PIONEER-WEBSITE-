@@ -1,27 +1,43 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
-import { SliderPrize } from '../SliderPrize/SliderPrize';
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { MemberDetailAction } from "../../redux/actions/action";
+import { SliderPrize } from "../SliderPrize/SliderPrize";
+import { listMember } from "../../assets/data";
 
-import './MemberInfo.scss';
+import "./MemberInfo.scss";
 
 export default function MemberInfo(props) {
-  const { memberDetail } = useSelector((state) => state.MemberReducer);
+  let { id } = useParams();
+
+  // useEffect(() => {
+  //   dispatch(MemberDetailAction(id));
+  //   // console.log(123);
+  // }, []);
+
+  // const { memberDetail } = useSelector((state) => state.MemberReducer);
+  const memberDetail = listMember.filter((item) => item.id === id);
+  console.log(memberDetail);
+
+  // const dispatch = useDispatch();
+  // console.log(id);
 
   const {
-    id,
     name,
     classes,
     position,
     describe,
     img,
     strengths,
-    contact: { facebook, gmail, github, linkedin },
+    facebook,
+    gmail,
+    github,
+    linkedin,
   } = memberDetail[0];
 
   const navigate = useNavigate();
 
-  if (id === 'dao-duy-tuan')
+  if (id === "dao-duy-tuan")
     return (
       <section>
         <div className="user_profile">
@@ -34,17 +50,17 @@ export default function MemberInfo(props) {
             <div className="separador"></div>
             <div className="user_contact">
               <a href={`${facebook}`} target="_blank" rel="noreferrer">
-                <i class="fab fa-facebook" style={{ color: '#0090E1' }}></i>
+                <i class="fab fa-facebook" style={{ color: "#0090E1" }}></i>
               </a>
               <a href={`mailto:${gmail}`}>
-                <i class="fa fa-envelope" style={{ color: '#EE0000' }}></i>
+                <i class="fa fa-envelope" style={{ color: "#EE0000" }}></i>
               </a>
               <a href={`${linkedin}`} target="_blank" rel="noreferrer">
-                <i class="fa fa-info" style={{ color: '#0090E1' }}></i>
+                <i class="fa fa-info" style={{ color: "#0090E1" }}></i>
               </a>
               {/*phone */}
               <a href={`tel:${github}`} target="_blank" rel="noreferrer">
-                <i class="fa fa-phone" style={{ color: '#000000' }}></i>
+                <i class="fa fa-phone" style={{ color: "#000000" }}></i>
               </a>
             </div>
           </div>
@@ -52,7 +68,7 @@ export default function MemberInfo(props) {
             <button
               className="cancel"
               onClick={() => {
-                navigate('/members');
+                navigate("/members");
               }}
             >
               X
@@ -93,33 +109,33 @@ export default function MemberInfo(props) {
           <div className="separador"></div>
           <div className="user_contact">
             <a href={`${facebook}`} target="_blank" rel="noreferrer">
-              <i class="fab fa-facebook" style={{ color: '#0090E1' }}></i>
+              <i class="fab fa-facebook" style={{ color: "#0090E1" }}></i>
             </a>
 
             <a href={`mailto:${gmail}`}>
-              <i class="fa fa-envelope" style={{ color: '#EE0000' }}></i>
+              <i class="fa fa-envelope" style={{ color: "#EE0000" }}></i>
             </a>
             <a href={`${linkedin}`} target="_blank" rel="noreferrer">
-              <i class="fab fa-linkedin-in" style={{ color: '#0090E1' }}></i>
+              <i class="fab fa-linkedin-in" style={{ color: "#0090E1" }}></i>
             </a>
             <a href={`${github}`} target="_blank" rel="noreferrer">
-              <i class="fab fa-github" style={{ color: '#000000' }}></i>
+              <i class="fab fa-github" style={{ color: "#000000" }}></i>
             </a>
           </div>
         </div>
         <div className="profile_info box-outer">
-          <div className="box-outer">
-
-          </div>
+          <div className="box-outer"></div>
           <button
             className="cancel"
             onClick={() => {
-              navigate('/members');
+              navigate("/members");
             }}
           >
             X
           </button>
-          <h1>{name} - {classes}</h1>
+          <h1>
+            {name} - {classes}
+          </h1>
           <h2>{position}</h2>
           <div className="separador"></div>
 

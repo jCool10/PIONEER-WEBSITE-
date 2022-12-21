@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 import "./Contact.scss";
 
 function Contact() {
   return (
-    <section className='contact'>
+    <section className=" contact">
       <div className="title">
         <h3>Liên hệ</h3>
         <p>Để lại tin nhắn cho chúng tôi.</p>
@@ -15,12 +15,17 @@ function Contact() {
           <input type="email" id="input-email" placeholder="Email" />
         </div>
         <div class="half right cf">
-          <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+          <textarea
+            name="message"
+            type="text"
+            id="input-message"
+            placeholder="Message"
+          ></textarea>
         </div>
         <input type="submit" value="Submit" id="input-submit" />
       </form>
     </section>
-  )
+  );
 }
 
 export default Contact;

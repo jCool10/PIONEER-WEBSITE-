@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import Card from '../MemberCard/MemberCard';
-import styleSlick from './MultipleRowSlick.module.css';
+import React, { Component } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Card from "../MemberCard/MemberCard";
+import styleSlick from "./MultipleRowSlick.module.css";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`${className} ${styleSlick['slick-prev']}`}
-      style={{ ...style, display: 'block' }}
+      className={`${className} ${styleSlick["slick-prev"]}`}
+      style={{ ...style, display: "block" }}
       onClick={onClick}
     ></div>
   );
@@ -20,8 +20,8 @@ function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`${className} ${styleSlick['slick-prev']}`}
-      style={{ ...style, display: 'block', left: '-50px' }}
+      className={`${className} ${styleSlick["slick-prev"]}`}
+      style={{ ...style, display: "block", left: "-50px" }}
       onClick={onClick}
     ></div>
   );

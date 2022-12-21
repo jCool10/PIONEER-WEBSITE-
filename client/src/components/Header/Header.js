@@ -1,19 +1,23 @@
-import React from 'react';
-import logo from '../../assets/logo_pioneer.png';
+import React from "react";
+import logo from "../../assets/logo_pioneer.png";
 
-import './Header.scss';
+import "./Header.scss";
 
 export default function Header() {
   return (
-    <section className="header">
-      <div className="header-img">
-        <img src={logo} alt="logo" />
-      </div>
+    <section className="container header">
+      <a
+        rel="noopener noreferrer"
+        href="/"
+        aria-label="Back to homepage"
+        className="header-img"
+      >
+        <img src={logo} alt="" />
+      </a>
 
-      <div className="header-search">
-        <i class="fa fa-search"></i>
-
-        <input type="search" placeholder="Search" />
+      <div className="header-btn">
+        <button>Sign in</button>
+        <button className="sign-up ">Sign up</button>
       </div>
     </section>
   );

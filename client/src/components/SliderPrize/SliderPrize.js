@@ -1,7 +1,7 @@
-import React from 'react'
-import Slider from 'react-slick';
-import PrizeCard from '../PrizeCard/PrizeCard';
-import './SliderPrize.scss'
+import React from "react";
+import Slider from "react-slick";
+import PrizeCard from "../PrizeCard/PrizeCard";
+import "./SliderPrize.scss";
 
 export const SliderPrize = (props) => {
   const { rows, data } = props;
@@ -16,15 +16,8 @@ export const SliderPrize = (props) => {
     padding: 20,
   };
 
-  // const renderPrizeCard = () => {
-  //   return data?.map((item, index) => {
-  //     return <PrizeCard key={index} item={item} />;
-  //   });
-  // };
-
-
   return (
-    <div className='SliderPrize'>
+    <div className="SliderPrize">
       <Slider {...settings}>
         {/* {renderPrizeCard()} */}
         <PrizeCard />
@@ -35,5 +28,5 @@ export const SliderPrize = (props) => {
         <PrizeCard />
       </Slider>
     </div>
-  )
-}
+  );
+};
